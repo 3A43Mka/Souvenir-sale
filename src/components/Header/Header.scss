@@ -1,0 +1,40 @@
+.dropdown {
+    a {
+        color: white !important;
+        .nav-link {
+            color: black !important;
+        }
+    }
+}
+
+.profile {
+    display: inline;
+    &__picture {
+        height: 43px;
+        width: 43px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 1px wheat solid;
+    }
+}
+
+.logout {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.login {
+    width: 100px;
+    margin-right: 50px;
+}
+
+@media only screen and (min-width: 992px) {
+    .nav-decorated:after {
+        content: "|";
+        opacity: 0.3;
+        position: absolute;
+        top: 16px;
+        margin-left: 6px;
+    }
+}
