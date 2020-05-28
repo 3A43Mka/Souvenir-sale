@@ -1,1 +1,1 @@
-Souvenir shop project
+Fun Souvenir Shop ReactJS project for EPAM Frontend course
