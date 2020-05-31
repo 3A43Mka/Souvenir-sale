@@ -27,7 +27,6 @@ const FavouriteItem = (
         id,
     };
 
-    console.log(id);
     const removeItem = () => {
         dispatch(removeProductFromFavourites(id));
         toasterNotify(`Товар ${title} был удален из списка желаний`);

@@ -26,8 +26,6 @@ const Favourites = (props) => {
 
 const mapStateToProps = state => {
 
-    console.log(state, 'state has changed');
-
     return {
         favouriteItems: state.shop.favourites,
         favouriteItemCount: state.shop.favourites.reduce((count, curItem) => {

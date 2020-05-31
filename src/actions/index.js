@@ -66,8 +66,6 @@ export const removeCategoryFromFilter = category => {
     }
 };
 
-////
-
 export const ADD_SEARCH = 'ADD_SEARCH';
 export const REMOVE_SEARCH = 'REMOVE_SEARCH';
 
@@ -86,7 +84,6 @@ export const removeSearch = () => {
 };
 
 
-////
 export const ORDER_BY_ASC = 'ORDER_BY_ASC';
 export const ORDER_BY_DESC = 'ORDER_BY_DESC';
 export const CLEAR_ORDER_BY_PRICE = 'CLEAR_ORDER_BY_PRICE';
@@ -117,21 +114,18 @@ export const COUNT_ITEM = 'COUNT_ITEM';
 
 
 export const nextPage = () => {
-    console.log("i'm nextpage action");
     return {
         type: NEXT_PAGE
     }
 };
 
 export const prevPage = () => {
-    console.log("i'm prevpage action");
     return {
         type: PREV_PAGE
     }
 };
 
 export const goPage = (n) => {
-    console.log("i'm gopage action");
     return {
         type: GO_PAGE,
         currentPage: n

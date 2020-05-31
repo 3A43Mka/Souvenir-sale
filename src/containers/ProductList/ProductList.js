@@ -10,8 +10,6 @@ import SearchField from "../../components/SearchField/SearchField";
 import Pagination from "../../components/Pagination/Pagination";
 
 const ProductList = (props) => {
-
-    const [colValue, setColValue] = useState('col-lg-4');
     const [pagesToShow] = useState(3);
 
     useEffect(() => {
@@ -32,7 +30,7 @@ const ProductList = (props) => {
                 <div className="row">
                     {props.products.length
                         ? paginationPipe(props.products, { perPage: props.perPage, currentPage: props.currentPage}).map(product => {
-                            let classes = `${colValue} col-md-6 mb-4`;
+                            let classes = `col-lg-4 col-md-6 mb-4`;
                             return (<div key={product.id} className={classes}>
                                 <Product  product={product} />
                             </div>)

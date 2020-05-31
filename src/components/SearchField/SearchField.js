@@ -27,8 +27,8 @@ const SearchField = (props) => {
 
 
     return (
-        <Form className="search-form">
-            <FormControl  value={searchText} type="text" placeholder="Поиск..." onChange={e => onSearch(e.target.value)} className="" />
+        <Form className="search-form" onSubmit={e => { e.preventDefault(); }}>
+            <FormControl  value={searchText} type="text" placeholder="Поиск..."  onChange={e => onSearch(e.target.value)}/>
         </Form>
     );
 

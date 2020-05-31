@@ -59,12 +59,12 @@ const ProductDetail = (props) => {
                     <>
                         <button
                             onClick={onCart}
-                            className="btn btn-lg btn-outline-primary text-uppercase"><i
+                            className="btn btn-lg btn-outline-primary text-uppercase d-block mt-2"><i
                                 className="fa fa-shopping-cart" /> В корзину
                 </button>
                         <button
                             onClick={onFavourites}
-                            className="btn btn-lg btn-outline-primary text-uppercase"><i
+                            className="btn btn-lg btn-outline-primary text-uppercase d-block mt-2"><i
                                 className="fa fa-heart" /> В список желаний
                 </button>
                         <hr />

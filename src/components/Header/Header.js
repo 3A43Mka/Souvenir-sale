@@ -16,7 +16,6 @@ const Header = ({ cartLength, favoutesLength }) => {
   const { setAuthTokens } = useAuth();
 
   const responseGoogle = (response) => {
-    console.log(response.profileObj);
     setAuthTokens(response.profileObj.googleId);
     setIsLogged(true);
     setFullname(response.profileObj.name);
@@ -24,7 +23,6 @@ const Header = ({ cartLength, favoutesLength }) => {
   }
 
   const onLogout = (response) => {
-    console.log("im logged out in google");
     setAuthTokens(null);
     localStorage.clear("tokens");
     setIsLogged(false);
