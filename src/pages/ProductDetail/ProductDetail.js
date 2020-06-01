@@ -4,7 +4,6 @@ import { Breadcrumb, BreadcrumbItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import ProductDetailComponent from '../../components/ProductDetail/ProductDetail';
 import ProductSlider from "../../components/ProductSlider/ProductSlider";
-import './ProductDetail.scss'
 
 const ProductDetail = (props) => {
 

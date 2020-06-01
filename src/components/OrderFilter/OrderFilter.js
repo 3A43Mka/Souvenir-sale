@@ -15,9 +15,7 @@ const OrderFilter = ({dispatch}) => {
           dispatch(clearOrderBy());
           return;
         }
-        console.log("componentDidUpdateFunction");
       });
-
 
     const handleRadioChange = (e) => {
         const value = e.target.value;
@@ -54,22 +52,22 @@ const OrderFilter = ({dispatch}) => {
                 </div>
                 <ul className="list-group flex-row  flex-wrap" >
                     <li className="list-group-item flex-fill">
-                        <label className="custom-radio-btn"> По возрастанию
+                        <label className="radio"> По возрастанию
                             <input
                                     value={ORDER_BY_ASC}
                                     type="radio"
                                     onChange={handleRadioChange}
-                                   name="orderByPrice" className="custom-radio-btn__input"/>
-                            <span className="custom-radio-btn__span"></span>
+                                   name="orderByPrice" className="radio__input"/>
+                            <span className="radio__span"></span>
                         </label>
                     </li>
                     <li className="list-group-item flex-fill">
-                        <label className="custom-radio-btn"> По убыванию
+                        <label className="radio"> По убыванию
                             <input
                                 value={ORDER_BY_DESC}
                                 onChange={handleRadioChange}
-                                type="radio" name="orderByPrice" className="custom-radio-btn__input"/>
-                            <span className="custom-radio-btn__span"></span>
+                                type="radio" name="orderByPrice" className="radio__input"/>
+                            <span className="radio__span"></span>
                         </label>
                     </li>
                 </ul>

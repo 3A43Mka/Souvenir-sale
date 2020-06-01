@@ -33,24 +33,24 @@ const ProductDetail = (props) => {
             <article className="card-body p-5">
                 <h3 className="title mb-3">{props.product.title}</h3>
 
-                <p className="price-detail-wrap">
-                    <span className="price h3 text-success">
-                        <span className="currency">₴ </span><span className="num">{formatMoney(props.product.price)}</span>
+                <p >
+                    <span className="h3 text-success">
+                        <span>₴ </span><span className="num">{formatMoney(props.product.price)}</span>
                     </span>
                 </p>
-                <dl className="item-property">
+                <dl>
                     <dt>Описание</dt>
                     <dd><p className="">{props.product.description}</p></dd>
                 </dl>
-                <dl className="param param-feature">
+                <dl>
                     <dt>Категория</dt>
                     <dd className="text-capitalize">{props.product.category}</dd>
                 </dl>
-                <dl className="param param-feature">
+                <dl>
                     <dt>Размер</dt>
                     <dd>{props.product.size}</dd>
                 </dl>
-                <dl className="param param-feature">
+                <dl>
                     <dt>Вес</dt>
                     <dd>{props.product.weight}</dd>
                 </dl>
